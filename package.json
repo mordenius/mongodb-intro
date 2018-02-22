@@ -1,0 +1,34 @@
+{
+  "name": "mongodb-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node ./source/js/index.js",
+    "dev:start": "nodemon --exec npm run babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mordenius/mongodb-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mordenius/mongodb-intro/issues"
+  },
+  "homepage": "https://github.com/mordenius/mongodb-intro#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-bbt": "0.0.6",
+    "eslint": "^4.18.1",
+    "eslint-config-bbt": "^1.0.1",
+    "nodemon": "^1.15.1",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "mongoose": "^5.0.6"
+  }
+}
