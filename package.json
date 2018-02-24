@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node ./source/js/index.js",
-    "dev:start": "nodemon --exec npm run babel-node"
+    "dev:start": "nodemon --exec npm run babel-node",
+    "db:init": "babel-node ./source/js/mongo/modify/insert.js",
+    "db:clear": "babel-node ./source/js/mongo/modify/clear.js"
   },
   "repository": {
     "type": "git",
