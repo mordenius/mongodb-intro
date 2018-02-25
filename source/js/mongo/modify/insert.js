@@ -3,21 +3,20 @@ import Author from "~/mongo/models/Author.model";
 
 class InitialDB extends ConnectionClass {
 	static async action() {
+
+		// insert one doc
 		await Author.create({
 			name: "Howard Lovecraft"
 		});
 
-		await Author.create({
-			name: "Phillip K. Dick"
-		});
+		// insert many docs
+		const authorList = [
+			{ name: "Phillip K. Dick" },
+			{ name: "Jack Finney" },
+			{ name: "Shakespeare" }
+		];
 
-		await Author.create({
-			name: "Jack Finney"
-		});
-
-		await Author.create({
-			name: "Shakespeare"
-		});
+		await Author.collection.insert(authorList);
 	}
 }
 
